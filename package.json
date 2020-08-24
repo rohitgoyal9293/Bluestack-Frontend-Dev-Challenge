@@ -2,6 +2,7 @@
   "name": "react-learning",
   "version": "0.1.0",
   "private": true,
+  "homepage": " https://rohitgoyal9293.github.io/Bluestack-Frontend-Dev-Challenge/",
   "dependencies": {
     "axios": "^0.19.0",
     "bootstrap": "^4.4.1",
@@ -21,7 +22,9 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "predeploy":"npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": "react-app"
