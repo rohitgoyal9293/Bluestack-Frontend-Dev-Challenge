@@ -1,19 +1,19 @@
 {
   "files": {
     "main.css": "/Bluestack-Frontend-Dev-Challenge/static/css/main.e069427a.chunk.css",
-    "main.js": "/Bluestack-Frontend-Dev-Challenge/static/js/main.9e71f348.chunk.js",
-    "main.js.map": "/Bluestack-Frontend-Dev-Challenge/static/js/main.9e71f348.chunk.js.map",
+    "main.js": "/Bluestack-Frontend-Dev-Challenge/static/js/main.830bb5b2.chunk.js",
+    "main.js.map": "/Bluestack-Frontend-Dev-Challenge/static/js/main.830bb5b2.chunk.js.map",
     "runtime-main.js": "/Bluestack-Frontend-Dev-Challenge/static/js/runtime-main.f8c9b838.js",
     "runtime-main.js.map": "/Bluestack-Frontend-Dev-Challenge/static/js/runtime-main.f8c9b838.js.map",
     "static/css/2.f3e39853.chunk.css": "/Bluestack-Frontend-Dev-Challenge/static/css/2.f3e39853.chunk.css",
-    "static/js/2.d1495826.chunk.js": "/Bluestack-Frontend-Dev-Challenge/static/js/2.d1495826.chunk.js",
-    "static/js/2.d1495826.chunk.js.map": "/Bluestack-Frontend-Dev-Challenge/static/js/2.d1495826.chunk.js.map",
+    "static/js/2.46a79b54.chunk.js": "/Bluestack-Frontend-Dev-Challenge/static/js/2.46a79b54.chunk.js",
+    "static/js/2.46a79b54.chunk.js.map": "/Bluestack-Frontend-Dev-Challenge/static/js/2.46a79b54.chunk.js.map",
     "index.html": "/Bluestack-Frontend-Dev-Challenge/index.html",
-    "precache-manifest.66f4cd70fa43330febdfbada48cfc314.js": "/Bluestack-Frontend-Dev-Challenge/precache-manifest.66f4cd70fa43330febdfbada48cfc314.js",
+    "precache-manifest.bafdad02cf754070145eadbf54d32d25.js": "/Bluestack-Frontend-Dev-Challenge/precache-manifest.bafdad02cf754070145eadbf54d32d25.js",
     "service-worker.js": "/Bluestack-Frontend-Dev-Challenge/service-worker.js",
     "static/css/2.f3e39853.chunk.css.map": "/Bluestack-Frontend-Dev-Challenge/static/css/2.f3e39853.chunk.css.map",
     "static/css/main.e069427a.chunk.css.map": "/Bluestack-Frontend-Dev-Challenge/static/css/main.e069427a.chunk.css.map",
-    "static/js/2.d1495826.chunk.js.LICENSE.txt": "/Bluestack-Frontend-Dev-Challenge/static/js/2.d1495826.chunk.js.LICENSE.txt",
+    "static/js/2.46a79b54.chunk.js.LICENSE.txt": "/Bluestack-Frontend-Dev-Challenge/static/js/2.46a79b54.chunk.js.LICENSE.txt",
     "static/media/Bitmap-1.png": "/Bluestack-Frontend-Dev-Challenge/static/media/Bitmap-1.977ecf7b.png",
     "static/media/Bitmap-3.png": "/Bluestack-Frontend-Dev-Challenge/static/media/Bitmap-3.7173cfe7.png",
     "static/media/Bitmap-4.png": "/Bluestack-Frontend-Dev-Challenge/static/media/Bitmap-4.90640a87.png",
@@ -26,8 +26,8 @@
   "entrypoints": [
     "static/js/runtime-main.f8c9b838.js",
     "static/css/2.f3e39853.chunk.css",
-    "static/js/2.d1495826.chunk.js",
+    "static/js/2.46a79b54.chunk.js",
     "static/css/main.e069427a.chunk.css",
-    "static/js/main.9e71f348.chunk.js"
+    "static/js/main.830bb5b2.chunk.js"
   ]
 }

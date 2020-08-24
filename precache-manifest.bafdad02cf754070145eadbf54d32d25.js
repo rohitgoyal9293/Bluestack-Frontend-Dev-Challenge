@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "e10097a08e3c044f0402d0d5da666284",
+    "revision": "2d4e3c8d7df57c92dee6bd401b8a7047",
     "url": "/Bluestack-Frontend-Dev-Challenge/index.html"
   },
   {
-    "revision": "38c4db5d0d5bd11a45ac",
+    "revision": "c7aaf9bcf3e71e3bc931",
     "url": "/Bluestack-Frontend-Dev-Challenge/static/css/2.f3e39853.chunk.css"
   },
   {
-    "revision": "e3061a661e444c5a2a54",
+    "revision": "bd8bd89cb46457b4c341",
     "url": "/Bluestack-Frontend-Dev-Challenge/static/css/main.e069427a.chunk.css"
   },
   {
-    "revision": "38c4db5d0d5bd11a45ac",
-    "url": "/Bluestack-Frontend-Dev-Challenge/static/js/2.d1495826.chunk.js"
+    "revision": "c7aaf9bcf3e71e3bc931",
+    "url": "/Bluestack-Frontend-Dev-Challenge/static/js/2.46a79b54.chunk.js"
   },
   {
     "revision": "f6f897265d57399127478b1973bf92d3",
-    "url": "/Bluestack-Frontend-Dev-Challenge/static/js/2.d1495826.chunk.js.LICENSE.txt"
+    "url": "/Bluestack-Frontend-Dev-Challenge/static/js/2.46a79b54.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "e3061a661e444c5a2a54",
-    "url": "/Bluestack-Frontend-Dev-Challenge/static/js/main.9e71f348.chunk.js"
+    "revision": "bd8bd89cb46457b4c341",
+    "url": "/Bluestack-Frontend-Dev-Challenge/static/js/main.830bb5b2.chunk.js"
   },
   {
     "revision": "70d605141b8a633ebe6d",
