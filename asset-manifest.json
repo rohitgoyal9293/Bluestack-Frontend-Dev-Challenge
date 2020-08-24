@@ -1,0 +1,33 @@
+{
+  "files": {
+    "main.css": "/Bluestack-Frontend-Dev-Challenge/static/css/main.e069427a.chunk.css",
+    "main.js": "/Bluestack-Frontend-Dev-Challenge/static/js/main.9e71f348.chunk.js",
+    "main.js.map": "/Bluestack-Frontend-Dev-Challenge/static/js/main.9e71f348.chunk.js.map",
+    "runtime-main.js": "/Bluestack-Frontend-Dev-Challenge/static/js/runtime-main.f8c9b838.js",
+    "runtime-main.js.map": "/Bluestack-Frontend-Dev-Challenge/static/js/runtime-main.f8c9b838.js.map",
+    "static/css/2.f3e39853.chunk.css": "/Bluestack-Frontend-Dev-Challenge/static/css/2.f3e39853.chunk.css",
+    "static/js/2.d1495826.chunk.js": "/Bluestack-Frontend-Dev-Challenge/static/js/2.d1495826.chunk.js",
+    "static/js/2.d1495826.chunk.js.map": "/Bluestack-Frontend-Dev-Challenge/static/js/2.d1495826.chunk.js.map",
+    "index.html": "/Bluestack-Frontend-Dev-Challenge/index.html",
+    "precache-manifest.66f4cd70fa43330febdfbada48cfc314.js": "/Bluestack-Frontend-Dev-Challenge/precache-manifest.66f4cd70fa43330febdfbada48cfc314.js",
+    "service-worker.js": "/Bluestack-Frontend-Dev-Challenge/service-worker.js",
+    "static/css/2.f3e39853.chunk.css.map": "/Bluestack-Frontend-Dev-Challenge/static/css/2.f3e39853.chunk.css.map",
+    "static/css/main.e069427a.chunk.css.map": "/Bluestack-Frontend-Dev-Challenge/static/css/main.e069427a.chunk.css.map",
+    "static/js/2.d1495826.chunk.js.LICENSE.txt": "/Bluestack-Frontend-Dev-Challenge/static/js/2.d1495826.chunk.js.LICENSE.txt",
+    "static/media/Bitmap-1.png": "/Bluestack-Frontend-Dev-Challenge/static/media/Bitmap-1.977ecf7b.png",
+    "static/media/Bitmap-3.png": "/Bluestack-Frontend-Dev-Challenge/static/media/Bitmap-3.7173cfe7.png",
+    "static/media/Bitmap-4.png": "/Bluestack-Frontend-Dev-Challenge/static/media/Bitmap-4.90640a87.png",
+    "static/media/Bitmap-5.png": "/Bluestack-Frontend-Dev-Challenge/static/media/Bitmap-5.e51f42c3.png",
+    "static/media/Bitmap-6.png": "/Bluestack-Frontend-Dev-Challenge/static/media/Bitmap-6.c161ba4a.png",
+    "static/media/Bitmap-7.png": "/Bluestack-Frontend-Dev-Challenge/static/media/Bitmap-7.8a4d68db.png",
+    "static/media/Bitmap-8.png": "/Bluestack-Frontend-Dev-Challenge/static/media/Bitmap-8.3ecfc5bd.png",
+    "static/media/logo.png": "/Bluestack-Frontend-Dev-Challenge/static/media/logo.1f4b5766.png"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.f8c9b838.js",
+    "static/css/2.f3e39853.chunk.css",
+    "static/js/2.d1495826.chunk.js",
+    "static/css/main.e069427a.chunk.css",
+    "static/js/main.9e71f348.chunk.js"
+  ]
+}
