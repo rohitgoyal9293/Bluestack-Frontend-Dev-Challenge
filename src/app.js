@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Route, Redirect, Switch } from "react-router-dom";
+//import { Route, Redirect, Switch } from "react-router-dom";
 import Home from "./components/home";
 import NavBar from "./layout/navBar";
 import "./App.scss";
@@ -12,10 +12,11 @@ class App extends Component {
 
         <section>
           <main>
-            <Switch>
+             <Home />
+            {/* <Switch>
               <Route path="/home" component={Home} />
               <Redirect from="/" exact to="/home" />
-            </Switch>
+            </Switch> */}
           </main>
         </section>
       </React.Fragment>
