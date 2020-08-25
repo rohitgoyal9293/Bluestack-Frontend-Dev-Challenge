@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/Bluestack-Frontend-Dev-Challenge/static/css/main.e069427a.chunk.css",
-    "main.js": "/Bluestack-Frontend-Dev-Challenge/static/js/main.830bb5b2.chunk.js",
-    "main.js.map": "/Bluestack-Frontend-Dev-Challenge/static/js/main.830bb5b2.chunk.js.map",
+    "main.js": "/Bluestack-Frontend-Dev-Challenge/static/js/main.f102cf3a.chunk.js",
+    "main.js.map": "/Bluestack-Frontend-Dev-Challenge/static/js/main.f102cf3a.chunk.js.map",
     "runtime-main.js": "/Bluestack-Frontend-Dev-Challenge/static/js/runtime-main.f8c9b838.js",
     "runtime-main.js.map": "/Bluestack-Frontend-Dev-Challenge/static/js/runtime-main.f8c9b838.js.map",
     "static/css/2.f3e39853.chunk.css": "/Bluestack-Frontend-Dev-Challenge/static/css/2.f3e39853.chunk.css",
     "static/js/2.46a79b54.chunk.js": "/Bluestack-Frontend-Dev-Challenge/static/js/2.46a79b54.chunk.js",
     "static/js/2.46a79b54.chunk.js.map": "/Bluestack-Frontend-Dev-Challenge/static/js/2.46a79b54.chunk.js.map",
     "index.html": "/Bluestack-Frontend-Dev-Challenge/index.html",
-    "precache-manifest.bafdad02cf754070145eadbf54d32d25.js": "/Bluestack-Frontend-Dev-Challenge/precache-manifest.bafdad02cf754070145eadbf54d32d25.js",
+    "precache-manifest.4266888d7106b74365d1d95fbe4a2341.js": "/Bluestack-Frontend-Dev-Challenge/precache-manifest.4266888d7106b74365d1d95fbe4a2341.js",
     "service-worker.js": "/Bluestack-Frontend-Dev-Challenge/service-worker.js",
     "static/css/2.f3e39853.chunk.css.map": "/Bluestack-Frontend-Dev-Challenge/static/css/2.f3e39853.chunk.css.map",
     "static/css/main.e069427a.chunk.css.map": "/Bluestack-Frontend-Dev-Challenge/static/css/main.e069427a.chunk.css.map",
@@ -28,6 +28,6 @@
     "static/css/2.f3e39853.chunk.css",
     "static/js/2.46a79b54.chunk.js",
     "static/css/main.e069427a.chunk.css",
-    "static/js/main.830bb5b2.chunk.js"
+    "static/js/main.f102cf3a.chunk.js"
   ]
 }
