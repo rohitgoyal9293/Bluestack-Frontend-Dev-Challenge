@@ -1,27 +1,27 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "3562f62290cd81c154de77fd5dff119c",
+    "revision": "cc890ddcee70fec5027ef9b563d89d51",
     "url": "/Bluestack-Frontend-Dev-Challenge/index.html"
   },
   {
-    "revision": "c7aaf9bcf3e71e3bc931",
+    "revision": "b8d12597b6498b6f603e",
     "url": "/Bluestack-Frontend-Dev-Challenge/static/css/2.f3e39853.chunk.css"
   },
   {
-    "revision": "d66ace16161be866ac01",
-    "url": "/Bluestack-Frontend-Dev-Challenge/static/css/main.e069427a.chunk.css"
+    "revision": "40a97a42195b893ca175",
+    "url": "/Bluestack-Frontend-Dev-Challenge/static/css/main.f694d134.chunk.css"
   },
   {
-    "revision": "c7aaf9bcf3e71e3bc931",
-    "url": "/Bluestack-Frontend-Dev-Challenge/static/js/2.46a79b54.chunk.js"
+    "revision": "b8d12597b6498b6f603e",
+    "url": "/Bluestack-Frontend-Dev-Challenge/static/js/2.773323c9.chunk.js"
   },
   {
     "revision": "f6f897265d57399127478b1973bf92d3",
-    "url": "/Bluestack-Frontend-Dev-Challenge/static/js/2.46a79b54.chunk.js.LICENSE.txt"
+    "url": "/Bluestack-Frontend-Dev-Challenge/static/js/2.773323c9.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d66ace16161be866ac01",
-    "url": "/Bluestack-Frontend-Dev-Challenge/static/js/main.f102cf3a.chunk.js"
+    "revision": "40a97a42195b893ca175",
+    "url": "/Bluestack-Frontend-Dev-Challenge/static/js/main.99b77d80.chunk.js"
   },
   {
     "revision": "70d605141b8a633ebe6d",
@@ -54,6 +54,10 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
     "revision": "3ecfc5bd32f7be1a974631a1e152d0b3",
     "url": "/Bluestack-Frontend-Dev-Challenge/static/media/Bitmap-8.3ecfc5bd.png"
+  },
+  {
+    "revision": "013f0b90a4cae7b8bbf13e3fd9e7dc4a",
+    "url": "/Bluestack-Frontend-Dev-Challenge/static/media/getFetch.013f0b90.cjs"
   },
   {
     "revision": "1f4b57666ba11e9abc2cec5cb76828ff",
