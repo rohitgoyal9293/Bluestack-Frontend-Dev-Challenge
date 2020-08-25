@@ -1,6 +1,8 @@
 import React from "react";
+import en from '../../locales/en/translation';
+import de from '../../locales/de/translation';
 
-const PriceModal = ({ priceObj }) => {
+const PriceModal = ({ priceObj, selectedLang }) => {
   const image_url_path = priceObj.image_url
     ? priceObj.image_url
     : "Bitmap-1.png";
@@ -31,21 +33,21 @@ const PriceModal = ({ priceObj }) => {
               </div>
 
               <div className="card-section">
-                <div className="body-head">Pricing</div>
+                <div className="body-head">{selectedLang === 'en' ? en.pricing : de.pricing}</div>
                 <table className="table card-table">
                   <tbody>
                     <tr>
-                      <td className="light-txt">1 Month</td>
+                      <td className="light-txt">{selectedLang === 'en' ? en.oneMonth : de.oneMonth}</td>
                       <td className="bold-txt text-right">{priceObj.price.oneMonth}</td>
                     </tr>
 
                     <tr>
-                      <td className="light-txt">6 Month</td>
+                      <td className="light-txt">{selectedLang === 'en' ? en.sixMonth : de.sixMonth}</td>
                       <td className="bold-txt text-right"> {priceObj.price.sixMonth}</td>
                     </tr>
 
                     <tr>
-                      <td className="light-txt">1 Year</td>
+                      <td className="light-txt">{selectedLang === 'en' ? en.oneYear : de.oneYear}</td>
                       <td className="bold-txt text-right">{priceObj.price.oneYear}</td>
                     </tr>
                   </tbody>
@@ -59,7 +61,7 @@ const PriceModal = ({ priceObj }) => {
                   aria-label="close"
                   className="btn btn-md btn-default"
                 >
-                  Close
+                  {selectedLang === 'en' ? en.close : de.close}
                 </button>
               </div>
             </div>

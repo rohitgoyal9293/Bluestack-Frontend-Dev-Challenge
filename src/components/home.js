@@ -6,6 +6,9 @@ import UpcomingCampaignTable from "./common/upcomingCampaignTable";
 import LiveCampaignTable from "./common/liveCampaignTable";
 import PastCampaignTable from "./common/pastCampaignTable";
 import NoRecord from "./common/noRecord";
+import { withTranslation } from 'react-i18next';
+import en from '../locales/en/translation';
+import de from '../locales/de/translation';
 
 class Home extends Component {
   state = {
@@ -25,6 +28,7 @@ class Home extends Component {
       image_url: "",
     },
     startDate: new Date(),
+    selectedLang:'en'
   };
 
   // on component load
@@ -100,7 +104,15 @@ class Home extends Component {
     }
   };
 
+  // changeLang
+
+  changeLang=(lang)=>{
+    this.setState({selectedLang:lang});
+    this.props.i18n.changeLanguage(lang);
+  }
+
   render() {
+    const { t } = this.props;
     const {
       upcomingCampaignList,
       liveCampaignList,
@@ -108,18 +120,37 @@ class Home extends Component {
       selectedTab,
       priceObj,
       startDate,
+      selectedLang
     } = this.state;
+
     return (
       <React.Fragment>
         <div className="custom-container">
           <div className="row">
             <div className="col-sm-12">
-              <h1 className="main-head">Manage Campaigns</h1>
+              <div className="clearfix">
+                 <h1 className="main-head">
+                       {selectedLang === 'en' ? en.manageCampaigns : de.manageCampaigns} 
+                  </h1>  
+                  <div className="dropdown langDropdown">
+                    <button className="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                       {selectedLang === 'en' && <span>English</span>}
+                       {selectedLang === 'de' && <span>German</span>}
+                    </button>
+                    <div className="dropdown-menu" aria-labelledby="dropdownMenuButton">
+                       <a className="dropdown-item" onClick={()=>this.changeLang('en')}>English</a>
+                       <a className="dropdown-item" onClick={()=>this.changeLang('de')}>German</a>
+                    </div>
+                  </div>
+
+              </div>
+             
 
               {/* Campaign Tab list */}
               <NavTab
                 selectedTab={selectedTab}
                 setSelectedTab={this.handleSetSelectedTab}
+                selectedLang={selectedLang}
               />
 
               {/* Upcoming Campaign Table */}
@@ -129,6 +160,7 @@ class Home extends Component {
                 startDate={startDate}
                 setPrice={this.handleSetPrice}
                 changeDate={this.handleChangeDate}
+                selectedLang={selectedLang}
               />
 
               {/* Live Campaign Table */}
@@ -138,6 +170,7 @@ class Home extends Component {
                 startDate={startDate}
                 setPrice={this.handleSetPrice}
                 changeDate={this.handleChangeDate}
+                selectedLang={selectedLang}
               />
 
               {/* Past Campaign Table */}
@@ -147,6 +180,7 @@ class Home extends Component {
                 startDate={startDate}
                 setPrice={this.handleSetPrice}
                 changeDate={this.handleChangeDate}
+                selectedLang={selectedLang}
               />
 
               {/* No Record Found */}
@@ -155,6 +189,7 @@ class Home extends Component {
                 upcomingCampaignList={upcomingCampaignList}
                 liveCampaignList={liveCampaignList}
                 pastCampaignList={pastCampaignList}
+                selectedLang={selectedLang}
               />
             </div>
           </div>
@@ -162,10 +197,13 @@ class Home extends Component {
 
         {/*Price modal*/}
 
-        <PriceModal priceObj={priceObj} />
+        <PriceModal 
+         priceObj={priceObj}
+         selectedLang={selectedLang}
+       />
       </React.Fragment>
     );
   }
 }
 
-export default Home;
+export default withTranslation() (Home);

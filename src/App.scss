@@ -2,6 +2,15 @@
   margin: 20px 0;
   font-weight: 700;
   font-size: 2em;
+  float:left;
+}
+
+.langDropdown{
+  float:right;
+  margin-top:30px;
+    .dropdown-item{
+      cursor: pointer;
+    }
 }
 
 .custom-container {

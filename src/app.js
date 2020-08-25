@@ -3,9 +3,11 @@ import React, { Component } from "react";
 import Home from "./components/home";
 import NavBar from "./layout/navBar";
 import "./App.scss";
+import { withTranslation } from 'react-i18next';
 
 class App extends Component {
   render() {
+    const { t } = this.props;
     return (
       <React.Fragment>
         <NavBar />
@@ -24,4 +26,4 @@ class App extends Component {
   }
 }
 
-export default App;
+export default withTranslation() (App);

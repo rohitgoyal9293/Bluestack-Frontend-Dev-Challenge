@@ -2,20 +2,22 @@ import React, { Component } from "react";
 import DatePicker from "react-datepicker";
 import "react-datepicker/dist/react-datepicker.css";
 import Moment from "react-moment";
+import en from '../../locales/en/translation';
+import de from '../../locales/de/translation';
 
 class PastCampaignTable extends Component {
   render() {
-    const { selectedTab, pastCampaignList, startDate } = this.props;
+    const { selectedTab, pastCampaignList, startDate, selectedLang } = this.props;
     return (
       <React.Fragment>
         {selectedTab === "Past Campaigns" && (
           <table>
             <thead>
               <tr>
-                <th width="15%">Date</th>
-                <th width="25%">Campaign</th>
-                <th width="20%">View</th>
-                <th width="40%">Actions</th>
+                <th width="15%">{selectedLang === 'en' ? en.date : de.date}</th>
+                <th width="25%">{selectedLang === 'en' ? en.campaign : de.campaign}</th>
+                <th width="20%">{selectedLang === 'en' ? en.view : de.view}</th>
+                <th width="40%">{selectedLang === 'en' ? en.action : de.action}</th>
               </tr>
             </thead>
             <tbody>
@@ -57,7 +59,7 @@ class PastCampaignTable extends Component {
                       <div className="icon-img">
                         <img alt="price" src={require("../../images/Price.png")} />
                       </div>
-                      <div className="icon-name">View Pricing</div>
+                      <div className="icon-name">{selectedLang === 'en' ? en.viewPricing : de.viewPricing}</div>
                     </a>
                   </td>
 
@@ -84,7 +86,7 @@ class PastCampaignTable extends Component {
                           src={require("../../images/statistics-report.png")}
                         />
                       </div>
-                      <div className="icon-name">Report</div>
+                      <div className="icon-name">{selectedLang === 'en' ? en.report : de.report}</div>
                     </a>
 
                     <a className="icon-details clearfix pos-relative calender-details">
@@ -99,7 +101,7 @@ class PastCampaignTable extends Component {
                       <div className="calender-img">
                         <img alt="calender" src={require("../../images/calendar.png")} />
                       </div>
-                      <div className="calender-name">Schedule Again</div>
+                      <div className="calender-name">{selectedLang === 'en' ? en.scheduleAgain : de.scheduleAgain}</div>
                     </a>
                   </td>
                 </tr>

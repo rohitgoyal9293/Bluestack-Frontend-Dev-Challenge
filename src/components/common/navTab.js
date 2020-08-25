@@ -1,8 +1,10 @@
 import React, { Component } from "react";
+import en from '../../locales/en/translation';
+import de from '../../locales/de/translation';
 
 class NavTab extends Component {
   render() {
-    const { selectedTab } = this.props;
+    const { selectedTab, selectedLang } = this.props;
     return (
       <React.Fragment>
         <ul className="nav nav-tabs campaign-tabs">
@@ -15,7 +17,7 @@ class NavTab extends Component {
                   : "nav-link"
               }`}
             >
-              Upcoming Campaigns
+              {selectedLang === 'en' ? en.upcomingCampaigns : de.upcomingCampaigns}
             </a>
           </li>
           <li className="nav-item">
@@ -27,7 +29,7 @@ class NavTab extends Component {
                   : "nav-link"
               }`}
             >
-              Live Campaigns
+              {selectedLang === 'en' ? en.liveCampaigns : de.liveCampaigns}
             </a>
           </li>
           <li className="nav-item">
@@ -39,7 +41,7 @@ class NavTab extends Component {
                   : "nav-link"
               }`}
             >
-              Past Campaigns
+              {selectedLang === 'en' ? en.pastCampaigns : de.pastCampaigns}
             </a>
           </li>
         </ul>
