@@ -43,13 +43,25 @@ class Home extends Component {
       localStorage.setItem("campaignList", JSON.stringify(campaignList));
     }
     const upcomingCampaignList = campaignList.filter(
-      (list) => new Date(list.createdOn) > new Date()
+      (list) => {
+         let todayDate = new Date();
+         let campaignDate = new Date(list.createdOn);
+         return campaignDate.setHours(0,0,0,0) > todayDate.setHours(0,0,0,0)
+      }
     );
     const liveCampaignList = campaignList.filter(
-      (list) => new Date(list.createdOn) === new Date()
+      (list) => {
+        let todayDate = new Date();
+        let campaignDate = new Date(list.createdOn);
+        return campaignDate.setHours(0,0,0,0) === todayDate.setHours(0,0,0,0)
+     }
     );
     const pastCampaignList = campaignList.filter(
-      (list) => new Date(list.createdOn) < new Date()
+      (list) => {
+        let todayDate = new Date();
+        let campaignDate = new Date(list.createdOn);
+        return campaignDate.setHours(0,0,0,0) < todayDate.setHours(0,0,0,0)
+       }
     );
     this.setState({ upcomingCampaignList, liveCampaignList, pastCampaignList });
   }

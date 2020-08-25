@@ -99,7 +99,7 @@ class UpcomingCampaignTable extends Component {
                       <div className="calender-img">
                         <img alt="calender" src={require("../../images/calendar.png")} />
                       </div>
-                      <div className="calender-name">Sechdule Again</div>
+                      <div className="calender-name">Schedule Again</div>
                     </a>
                   </td>
                 </tr>
