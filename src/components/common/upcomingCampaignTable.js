@@ -6,24 +6,31 @@ import en from '../../locales/en/translation';
 import de from '../../locales/de/translation';
 
 class UpcomingCampaignTable extends Component {
+  state = {
+    colFixed:'date'
+  }
+
   render() {
     const { selectedTab, upcomingCampaignList, startDate,selectedLang } = this.props;
+    const {colFixed} = this.state;
     return (
       <React.Fragment>
         {selectedTab === "Upcoming Campaigns" && (
+           <div className="table-wrapper">
+           <div className="table-scroll-cover">
           <table>
             <thead>
               <tr>
-                <th width="15%">{selectedLang === 'en' ? en.date : de.date}</th>
-                <th width="25%">{selectedLang === 'en' ? en.campaign : de.campaign}</th>
-                <th width="20%">{selectedLang === 'en' ? en.view : de.view}</th>
-                <th width="40%">{selectedLang === 'en' ? en.action : de.action}</th>
+                <th className={colFixed === 'date' ? 'sticky-column' : ''}><span onClick={()=>this.setState({colFixed:'date'})} className="markFixed">{selectedLang === 'en' ? en.date : de.date}</span> </th>
+                <th className={colFixed === 'campaign' ? 'sticky-column' : ''}><span onClick={()=>this.setState({colFixed:'campaign'})} className="markFixed">{selectedLang === 'en' ? en.campaign : de.campaign}</span></th>
+                <th className={colFixed === 'view' ? 'sticky-column' : ''}><span onClick={()=>this.setState({colFixed:'view'})} className="markFixed">{selectedLang === 'en' ? en.view : de.view}</span></th>
+                <th className={colFixed === 'action' ? 'sticky-column' : ''}><span onClick={()=>this.setState({colFixed:'action'})} className="markFixed">{selectedLang === 'en' ? en.action : de.action}</span></th>
               </tr>
             </thead>
             <tbody>
               {upcomingCampaignList.map((list, i) => (
                 <tr key={i}>
-                  <td data-label="date">
+                  <td className={colFixed === 'date' ? 'sticky-column' : ''}  data-label="date">
                     <div className="campaign-date">
                       <Moment
                         format="MMM YYYY, DD"
@@ -34,7 +41,7 @@ class UpcomingCampaignTable extends Component {
                       <Moment fromNow>{list.createdOn}</Moment>
                     </div>
                   </td>
-                  <td data-label="campaign">
+                  <td className={colFixed === 'campaign' ? 'sticky-column' : ''} data-label="campaign">
                     <div className="clearfix campaign-details">
                       <div className="campaign-img">
                         <img
@@ -49,7 +56,7 @@ class UpcomingCampaignTable extends Component {
                       </div>
                     </div>
                   </td>
-                  <td data-label="view">
+                  <td className={colFixed === 'view' ? 'sticky-column' : ''} data-label="view">
                     <a
                       onClick={() => this.props.setPrice(list)}
                       data-toggle="modal"
@@ -63,7 +70,7 @@ class UpcomingCampaignTable extends Component {
                     </a>
                   </td>
 
-                  <td data-label="actions">
+                  <td className={colFixed === 'action' ? 'sticky-column' : ''} data-label="actions">
                     <a
                       href={list.csv}
                       target="_blank"
@@ -108,6 +115,8 @@ class UpcomingCampaignTable extends Component {
               ))}
             </tbody>
           </table>
+          </div>
+          </div>
         )}
       </React.Fragment>
     );

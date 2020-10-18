@@ -15,7 +15,7 @@ class Home extends Component {
     upcomingCampaignList: [],
     liveCampaignList: [],
     pastCampaignList: [],
-    selectedTab: "Upcoming Campaigns",
+    selectedTab: "Past Campaigns",
     priceObj: {
       id: "",
       name: "",

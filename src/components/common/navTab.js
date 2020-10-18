@@ -8,18 +8,20 @@ class NavTab extends Component {
     return (
       <React.Fragment>
         <ul className="nav nav-tabs campaign-tabs">
-          <li className="nav-item">
+        <li className="nav-item">
             <a
-              onClick={() => this.props.setSelectedTab("Upcoming Campaigns")}
+              onClick={() => this.props.setSelectedTab("Past Campaigns")}
               className={`tab ${
-                selectedTab === "Upcoming Campaigns"
+                selectedTab === "Past Campaigns"
                   ? "nav-link active"
                   : "nav-link"
               }`}
             >
-              {selectedLang === 'en' ? en.upcomingCampaigns : de.upcomingCampaigns}
+              {selectedLang === 'en' ? en.pastCampaigns : de.pastCampaigns}
             </a>
           </li>
+
+        
           <li className="nav-item">
             <a
               onClick={() => this.props.setSelectedTab("Live Campaigns")}
@@ -32,18 +34,21 @@ class NavTab extends Component {
               {selectedLang === 'en' ? en.liveCampaigns : de.liveCampaigns}
             </a>
           </li>
+
+
           <li className="nav-item">
             <a
-              onClick={() => this.props.setSelectedTab("Past Campaigns")}
+              onClick={() => this.props.setSelectedTab("Upcoming Campaigns")}
               className={`tab ${
-                selectedTab === "Past Campaigns"
+                selectedTab === "Upcoming Campaigns"
                   ? "nav-link active"
                   : "nav-link"
               }`}
             >
-              {selectedLang === 'en' ? en.pastCampaigns : de.pastCampaigns}
+              {selectedLang === 'en' ? en.upcomingCampaigns : de.upcomingCampaigns}
             </a>
           </li>
+         
         </ul>
       </React.Fragment>
     );

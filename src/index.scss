@@ -10,6 +10,11 @@ body {
 .site-header {
   height: 80px;
   background: #1f2640;
+  position: fixed;
+  width:100%;
+  top:0;
+  left:0;
+  z-index:10001;
   .logo {
     width: 147px;
     height: 45px;
@@ -19,4 +24,8 @@ body {
       height: 100%;
     }
   }
+}
+
+section{
+  margin-top:80px;
 }

@@ -5,9 +5,9 @@ const NavBar = () => {
     <React.Fragment>
       <header className="site-header">
         <div className="custom-container">
-          <div className="logo">
+          {/* <div className="logo">
             <img src={require("../images/logo.png")} alt="logo" />
-          </div>
+          </div> */}
         </div>
       </header>
     </React.Fragment>
